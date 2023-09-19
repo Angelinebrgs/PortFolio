@@ -1,0 +1,42 @@
+:root{
+    --clr-grey: #4b5563;
+    --clr-light: #f8fafc;
+    --clr-purple400: #c084fc;
+    --clr-purple700: #7e22ce;
+    --clr-purple950: #3b0764;
+    --clr-blue500: #3b82f6;
+}
+
+*{
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Rowan', serif;
+    background-color: var(--clr-grey);
+}
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+button {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+strong {
+    color: var(--clr-purple950);
+}
+a {
+    color: var(--clr-purple700);
+}

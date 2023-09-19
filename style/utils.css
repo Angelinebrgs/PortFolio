@@ -1,0 +1,8 @@
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: var(--clr-blue500);
+    padding: 0.5em 1em;
+    border-radius: 6px;
+}
