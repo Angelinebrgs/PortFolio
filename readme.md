@@ -1,0 +1,1 @@
+Hello this will be another portfolio i'll build using vite to config and some smoother styles i'm trying to improve.
