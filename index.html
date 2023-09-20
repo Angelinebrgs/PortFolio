@@ -7,7 +7,7 @@
     <link href="https://api.fontshare.com/v2/css?f[]=rowan@500&f[]=satoshi@500&display=swap" rel="stylesheet">
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="LightMode">
     <header>
       <img class="logo" src="/img/Rond_1.png" alt="logo">
         <nav>
@@ -23,6 +23,11 @@
                 </li>
               </ul>
         </nav>
+        <label for="switch">LightMode</label>
+        <label class="switch">
+          <input type="checkbox" id="checkbox">
+          <span class="slider round"></span>
+        </label>
         <a class="cta" href="mailto:titou.borges@gmail.com"><button class="buttonnav">Contact</button></a>
     </header>
     <script type="module" src="./src/main.js"></script>

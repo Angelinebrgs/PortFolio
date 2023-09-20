@@ -65,3 +65,7 @@ nav ul li{
     display: inline-block;
     padding: 20px;
 }
+label{
+    color: var(--clr-cyan500);
+    padding-right: 2px;
+}

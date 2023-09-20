@@ -16,3 +16,14 @@ const observer = new IntersectionObserver(() => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el => observer.observe(el)));
+
+// LightMode
+function lightMode() {
+    var checkbox = document.getElementById("checkbox");
+    if (checkbox.checked) {
+        document.body.classList.add("light-mode");
+        console.log(checkbox);
+    } else {
+        document.body.classList.remove("light-mode");
+    }
+}
