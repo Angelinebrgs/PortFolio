@@ -6,3 +6,247 @@
     padding: 0.5em 1em;
     border-radius: 6px;
 }
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    /* supp it later */
+    border: 1px solid red;
+}
+.buttonnav{
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: var(--clr-cyan500);
+    background-color: var(--clr-slate600);
+}
+.logo{
+    cursor: pointer;
+}
+.section{
+    margin-top: 5rem;
+}
+/*création du switch dark/ light mode*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-slate600);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--clr-purple950);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: var(--clr-cyan500);
+}
+    input:focus + .slider {
+    box-shadow: 0 0 1px var(--clr-cyan500);
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+  .slider.round:before {
+    border-radius: 50%;
+}
+.light-mode{
+    background-color: var(--clr-light);
+    color: black;
+}
+/*Galaxy Fold trop compliqué mais en theorie il marche ça casse juste les autre media*/
+@media (min-width: 280px ) and (max-height:653px){
+    .container{
+        max-width: 280px;
+        max-height:653px
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        display: flex;
+        margin: 5px;
+    }
+    nav ul li{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+/*Mobile*/
+@media (min-width: 300px){
+    .container{
+        max-width: 300px;
+    }
+    label{
+        margin: 5px;
+    }
+    nav ul li{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+/* xS */
+@media (min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+    header{
+        height: 140px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+
+/* S */
+@media (min-width: 640px){
+    .container{
+        max-width: 640px;
+    }
+    header{
+        height: 140px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+/* M */
+@media (min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+    header{
+        height: 80px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+
+/* L */
+@media (min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+    .section{
+        margin-top: 6.5rem;
+    }
+    header{
+        height: 80px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+
+/* xL */
+@media (min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }
+    header{
+        height: 80px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+
+/* 2xL */
+@media (min-width: 1536px){
+    .container{
+        max-width: 1536px;
+    }
+    header{
+        height: 80px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
