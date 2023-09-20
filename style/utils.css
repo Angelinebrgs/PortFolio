@@ -110,8 +110,16 @@ input:checked + .slider:before {
     .container{
         max-width: 300px;
     }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
     label{
         margin: 5px;
+    }
+    .label{
+        display: flex;
+        flex-direction: column;
     }
     nav ul li{
         list-style: none;
