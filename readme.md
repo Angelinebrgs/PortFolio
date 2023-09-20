@@ -12,8 +12,8 @@ this is my first vite project
 i used vite commande to initalise project with 
 that command npm create vite@latest.
 
-then i choosed vailla for javascript
+then i choosed vanilla for javascript
 
 and javascript (i have heard of type script but i don't know it enough)
 
- the command to run the project is : npm run dev
+ the command to run the project in localhost is : npm run dev
