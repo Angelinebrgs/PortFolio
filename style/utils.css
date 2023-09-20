@@ -83,10 +83,63 @@ input:checked + .slider:before {
     background-color: var(--clr-light);
     color: black;
 }
+/*Galaxy Fold trop compliqué mais en theorie il marche ça casse juste les autre media*/
+@media (min-width: 280px ) and (max-height:653px){
+    .container{
+        max-width: 280px;
+        max-height:653px
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    label{
+        display: flex;
+        margin: 5px;
+    }
+    nav ul li{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
+/*Mobile*/
+@media (min-width: 300px){
+    .container{
+        max-width: 300px;
+    }
+    label{
+        margin: 5px;
+    }
+    nav ul li{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 0px;
+    }
+}
 /* xS */
 @media (min-width: 475px){
     .container{
         max-width: 475px;
+    }
+    header{
+        height: 140px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 0px;
     }
 }
 
@@ -95,11 +148,40 @@ input:checked + .slider:before {
     .container{
         max-width: 640px;
     }
+    header{
+        height: 140px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display:flex;
+        flex-direction: column;
+        padding: 10px;
+        padding-left: 0px;
+    }
 }
 /* M */
 @media (min-width: 768px){
     .container{
         max-width: 768px;
+    }
+    header{
+        height: 80px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
     }
 }
 
@@ -111,6 +193,20 @@ input:checked + .slider:before {
     .section{
         margin-top: 6.5rem;
     }
+    header{
+        height: 80px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
+    }
 }
 
 /* xL */
@@ -118,11 +214,39 @@ input:checked + .slider:before {
     .container{
         max-width: 1280px;
     }
+    header{
+        height: 80px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
+    }
 }
 
 /* 2xL */
 @media (min-width: 1536px){
     .container{
         max-width: 1536px;
+    }
+    header{
+        height: 80px;
+    }
+    .label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0px;
     }
 }

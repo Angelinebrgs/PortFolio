@@ -44,7 +44,7 @@ a {
     text-decoration: none;
 }
 img{
-    margin: 20px;
+    margin: 10px;
     width: 5%;
 }
 header{
@@ -58,12 +58,6 @@ header{
     border-left: solid 4px var(--clr-purple950);
     border-right: solid 4px var(--clr-purple950);
     background-color: var(--clr-slate800);
-    height: 80px;
-}
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
 }
 label{
     color: var(--clr-cyan500);
