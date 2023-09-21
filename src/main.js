@@ -17,6 +17,7 @@ const observer = new IntersectionObserver(() => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el => observer.observe(el)));
 
+//Light/darkmode
 function lightMode() {
     var checkbox = document.getElementById("checkbox");
     var label = document.getElementById("labellm");

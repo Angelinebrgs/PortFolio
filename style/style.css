@@ -61,5 +61,12 @@ header{
 }
 label{
     color: var(--clr-cyan500);
-    padding-right: 2px;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+button{
+    margin-left: 5px;
+}
+#labellm{
+    margin-top: 5px;
 }
