@@ -18,7 +18,7 @@
 .buttonnav{
     border: solid black 1px;
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 4px 15px;
     color: var(--clr-cyan500);
     background-color: var(--clr-slate600);
 }
@@ -83,43 +83,19 @@ input:checked + .slider:before {
     background-color: var(--clr-light);
     color: black;
 }
-/*Galaxy Fold trop compliqué mais en theorie il marche ça casse juste les autre media*/
-@media (min-width: 280px ) and (max-height:653px){
-    .container{
-        max-width: 280px;
-        max-height:653px
-    }
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    label{
-        display: flex;
-        margin: 5px;
-    }
-    nav ul li{
-        list-style: none;
-        display:flex;
-        flex-direction: column;
-        padding: 10px;
-        padding-left: 0px;
-    }
-}
 /*Mobile*/
 @media (min-width: 300px){
     .container{
         max-width: 300px;
     }
-    header{
-        display: flex;
-        flex-direction: column;
-    }
     label{
         margin: 5px;
     }
-    .label{
-        display: flex;
-        flex-direction: column;
+    @media (max-width: 300px){
+        .label{
+            display: flex;
+            flex-direction: column;
+        }
     }
     nav ul li{
         list-style: none;
@@ -136,11 +112,6 @@ input:checked + .slider:before {
     }
     header{
         height: 140px;
-    }
-    .label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     nav ul li{
         list-style: none;
@@ -159,11 +130,6 @@ input:checked + .slider:before {
     header{
         height: 140px;
     }
-    .label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     nav ul li{
         list-style: none;
         display:flex;
@@ -179,11 +145,6 @@ input:checked + .slider:before {
     }
     header{
         height: 80px;
-    }
-    .label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     nav ul li{
         list-style: none;
@@ -204,11 +165,6 @@ input:checked + .slider:before {
     header{
         height: 80px;
     }
-    .label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     nav ul li{
         list-style: none;
         display: inline-block;
@@ -225,11 +181,6 @@ input:checked + .slider:before {
     header{
         height: 80px;
     }
-    .label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     nav ul li{
         list-style: none;
         display: inline-block;
@@ -245,11 +196,6 @@ input:checked + .slider:before {
     }
     header{
         height: 80px;
-    }
-    .label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
     nav ul li{
         list-style: none;
