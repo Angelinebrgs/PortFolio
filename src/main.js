@@ -1,10 +1,11 @@
 import '../style/modern-normalise.css';
 import '../style/style.css';
-import '../style/utils.css'
+import '../style/utils.css';
+import '../style/class.css'
 
 //Pour que des élément apparaisse au fur a mesure avec animation
-const observer = new IntersectionObserver(() => {
-    entries.forEach(() => {
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
         console.log(entry)
         if(entry.isIntersecting) {
             entry.target.classList.add('show');
