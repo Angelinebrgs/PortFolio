@@ -1,13 +1,6 @@
-.btn {
-    display: inline-block;
-    font-weight: 600;
-    text-decoration: none;
-    background-color: var(--clr-blue500);
-    padding: 0.5em 1em;
-    border-radius: 6px;
-}
 .container{
     width: 100%;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     padding-left: .5rem;
@@ -19,8 +12,8 @@
     border: solid black 1px;
     border-radius: 20px;
     padding: 4px 15px;
-    color: var(--clr-cyan500);
-    background-color: var(--clr-slate600);
+    color: var(--clr-light);
+    background-color: var(--clr-emerald600);
 }
 .logo{
     cursor: pointer;
@@ -47,7 +40,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--clr-slate600);
+    background-color: var(--clr-emerald600);
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -58,15 +51,15 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--clr-purple950);
+    background-color: var(--clr-fushia950);
     -webkit-transition: .4s;
     transition: .4s;
 }
 input:checked + .slider {
-    background-color: var(--clr-cyan500);
+    background-color: var(--clr-emerald600);
 }
     input:focus + .slider {
-    box-shadow: 0 0 1px var(--clr-cyan500);
+    box-shadow: 0 0 1px var(--clr-emerald600);
 }
 input:checked + .slider:before {
     -webkit-transform: translateX(26px);
@@ -82,11 +75,32 @@ input:checked + .slider:before {
 .light-mode{
     background-color: var(--clr-light);
     color: black;
+    transition: all 7s;
+}
+.light-mode header{
+    color: var(--clr-light);
+}
+.light-mode strong{
+    color: var(--clr-emerald600);
+}
+.light-mode .bar{
+    background-color: var(--clr-grey);
+}
+/*pour cacher et afficher une partie du site*/
+.hidden{
+    opacity: 0;
+    transition:  all 7s;
+}
+.show{
+opacity: 1;
 }
 /*Mobile*/
 @media (min-width: 300px){
     .container{
         max-width: 300px;
+    }
+    .logo{
+        width: 20%;
     }
     label{
         margin: 5px;
@@ -110,8 +124,15 @@ input:checked + .slider:before {
     .container{
         max-width: 475px;
     }
+    .logo{
+        width: 5%;
+    }
     header{
         height: 140px;
+    }
+    .label{
+        display: flex;
+        flex-direction: row;
     }
     nav ul li{
         list-style: none;
@@ -127,8 +148,15 @@ input:checked + .slider:before {
     .container{
         max-width: 640px;
     }
+    .logo{
+        width: 5%;
+    }
     header{
         height: 140px;
+    }
+    .label{
+        display: flex;
+        flex-direction: row;
     }
     nav ul li{
         list-style: none;
@@ -144,7 +172,14 @@ input:checked + .slider:before {
         max-width: 768px;
     }
     header{
-        height: 80px;
+        height: 100px;
+    }
+    .logo{
+        width: 5%;
+    }
+    .label{
+        display: flex;
+        flex-direction: row;
     }
     nav ul li{
         list-style: none;
@@ -159,11 +194,18 @@ input:checked + .slider:before {
     .container{
         max-width: 1024px;
     }
+    .logo{
+        width: 5%;
+    }
     .section{
         margin-top: 6.5rem;
     }
     header{
-        height: 80px;
+        height: 100px;
+    }
+    .label{
+        display: flex;
+        flex-direction: row;
     }
     nav ul li{
         list-style: none;
@@ -178,8 +220,15 @@ input:checked + .slider:before {
     .container{
         max-width: 1280px;
     }
+    .logo{
+        width: 5%;
+    }
     header{
-        height: 80px;
+        height: 100px;
+    }
+    .label{
+        display: flex;
+        flex-direction: row;
     }
     nav ul li{
         list-style: none;
@@ -194,8 +243,15 @@ input:checked + .slider:before {
     .container{
         max-width: 1536px;
     }
+    .logo{
+        width: 5%;
+    }
     header{
-        height: 80px;
+        height: 100px;
+    }
+    .label{
+        display: flex;
+        flex-direction: row;
     }
     nav ul li{
         list-style: none;
