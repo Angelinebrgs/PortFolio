@@ -5,8 +5,8 @@
     margin-right: auto;
     padding-left: .5rem;
     padding-right: .5rem;
-    /* supp it later */
-    border: 1px solid red;
+    /* to check containers range */
+    /* border: 1px solid red; */
 }
 .buttonnav{
     border: solid black 1px;
@@ -69,7 +69,7 @@ input:checked + .slider:before {
 .slider.round {
     border-radius: 34px;
 }
-  .slider.round:before {
+.slider.round:before {
     border-radius: 50%;
 }
 .light-mode{
@@ -89,7 +89,7 @@ input:checked + .slider:before {
 /*pour cacher et afficher une partie du site*/
 .hidden{
     opacity: 0;
-    transition:  all 7s;
+    transition:  all 1s;
 }
 .show{
 opacity: 1;
@@ -123,6 +123,19 @@ opacity: 1;
 @media (min-width: 475px){
     .container{
         max-width: 475px;
+        display: flex;
+                display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 5%;
     }
     .logo{
         width: 5%;
@@ -147,6 +160,14 @@ opacity: 1;
 @media (min-width: 640px){
     .container{
         max-width: 640px;
+                display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 5%;
     }
     .logo{
         width: 5%;
@@ -170,6 +191,11 @@ opacity: 1;
 @media (min-width: 768px){
     .container{
         max-width: 768px;
+                display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     header{
         height: 100px;
@@ -193,6 +219,14 @@ opacity: 1;
 @media (min-width: 1024px){
     .container{
         max-width: 1024px;
+                display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 5%;
     }
     .logo{
         width: 5%;
@@ -219,6 +253,14 @@ opacity: 1;
 @media (min-width: 1280px){
     .container{
         max-width: 1280px;
+                display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 5%;
     }
     .logo{
         width: 5%;
@@ -242,6 +284,14 @@ opacity: 1;
 @media (min-width: 1536px){
     .container{
         max-width: 1536px;
+                display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        width: 5%;
     }
     .logo{
         width: 5%;
