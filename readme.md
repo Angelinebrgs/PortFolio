@@ -1,9 +1,12 @@
 Hello,
+
  this will be another portfolio i'll build using vite to config and some smoother styles i'm trying to improve.
 
  if you want to see it you can take it and to run it you need to have node js installed
 
-if you have a galaxy fold can you tell me if the responsiv work well
+ the project part is subject of improvement i have some idea of pojects to create.
+
+<strong> either find it here </strong>: https://port-folio-five-sigma.vercel.app/
 
 <strong>for developers : </strong>
 
