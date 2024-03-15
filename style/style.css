@@ -46,7 +46,6 @@ a {
 nav ul li a:hover{
     background-color: var(--clr-emerald600);
     transition: 2s;
-    transform: rotate(360deg);
 }
 nav ul li a.souligne::after{
     content: "";
