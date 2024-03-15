@@ -24,10 +24,10 @@ function lightMode() {
     var label = document.getElementById("labellm");
     if (checkbox.checked) {
         document.body.classList.add("light-mode");
-        document.getElementById("labellm").innerHTML="DarkMode";
+        document.getElementById("labellm").innerHTML="Mode Sombre";
     } else {
         document.body.classList.remove("light-mode");
-        document.getElementById("labellm").innerHTML="LightMode";
+        document.getElementById("labellm").innerHTML="Mode clair";
     }
 }
 
